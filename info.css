@@ -1,0 +1,22 @@
+*{
+	margin: 0 ;
+	padding: 0 ;
+	color: #ffffff ;
+	font-family: 'Gaegu';
+}
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #b08968;
+}
+p{
+   position: absolute;
+  top: 8px;
+    right: 16px;
+    
+}
+center{
+    background-color: burlywood;
+  margin: 40px 20% 0px 20%;
+        border-radius: 30px;
+}

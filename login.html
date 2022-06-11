@@ -1,0 +1,95 @@
+<html>
+  <head>
+    <title>Synéchise Login</title>
+
+    <link rel="stylesheet" href="login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gaegu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+
+    <body>
+      <div class="il">
+        <div class="form-box">
+          <div class="button-box">
+            <div id="btn"></div>
+            <button type="button" class="toggle-btn" onclick="login()">
+              Log In
+            </button>
+            <button type="button" class="toggle-btn" onclick="register()">
+              Register
+            </button>
+          </div>
+          <form method="get" action="index.html" id="login" class="input-group">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Username"
+              required
+            />
+            <br />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Enter Password"
+              required
+            />
+            <br />
+            <input type="checkbox" class="check-box" /><span>
+              Remember Password
+            </span>
+            <button type="submit" class="submit-btn" value="submit button">
+              Log In
+            </button>
+          </form>
+
+          <form id="register" class="input-group">
+            <input
+              type="text"
+              class="input-field"
+              placeholder="Username"
+              required
+            />
+            <br />
+            <input
+              type="email"
+              class="input-field"
+              placeholder="Email"
+              required
+            />
+            <br />
+            <input
+              type="password"
+              class="input-field"
+              placeholder="Enter Password"
+              required
+            />
+            <br />
+            <input type="checkbox" class="check-box" /><span>
+              I agree to the terms & conditions
+            </span>
+            <button type="submit" class="submit-btn">Register</button>
+          </form>
+        </div>
+      </div>
+
+      <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("register");
+        var z = document.getElementById("btn");
+
+        function register() {
+          x.style.left = "-400px";
+          y.style.left = "60px";
+          z.style.left = "115px";
+        }
+
+        function login() {
+          x.style.left = "50px";
+          y.style.left = "450px";
+          z.style.left = "0px";
+        }
+      </script>
+    </body>
+  </head>
+</html>
